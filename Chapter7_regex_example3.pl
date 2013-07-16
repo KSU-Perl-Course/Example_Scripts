@@ -10,7 +10,7 @@ open(INFILE, "<$infile");
 
 while(<INFILE>)
 {
-	if (/\p{Space}/) #Matches any line with 'phytozome9_0\tgene' anywhere in the line
+	if (/\p{Space}/) #Matches any line with a horizontal or vertical space
 	{
 		print;
 	}
