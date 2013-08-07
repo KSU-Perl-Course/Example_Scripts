@@ -13,7 +13,7 @@ my @agp = <AGP>;
 close AGP;
 
 # get the contigs for the 1st 2 scaffolds
-my $scaffold = '';	# stores the current scaffold
+my $scaffold = '';	# stores the name of the current scaffold
 my $i = 0;		# stores the number of scaffolds processed so far
 my @contigs;		# stores the names of the contigs in the 1st 2 scaffolds
 
