@@ -26,7 +26,7 @@ foreach (@agp) {
   }
 
   if($i > 2) {
-    last;		# exit the while loop
+    last;		# exit the foreach loop
   }
   else {
     if($line[1] eq "W") {
