@@ -9,7 +9,7 @@ open (FILE, "<$file") || die $!;
 
 while(<FILE>)
 {
-	my @data = /\d/g;
+	my @data = /\d+/g;
 	my $colon_delin = join ":", @data;
 	say $colon_delin;
 }
