@@ -13,7 +13,7 @@ my @agp = <AGP>;
 close AGP;
 
 # get the contigs for the 1st 2 scaffolds
-my $scaffold = '';	# stores the current scaffold
+my $scaffold = '';	# stores the name of the current scaffold
 my $i = 0;		# stores the number of scaffolds processed so far
 my @contigs;		# stores the names of the contigs in the 1st 2 scaffolds
 
@@ -26,7 +26,7 @@ foreach (@agp) {
   }
 
   if($i > 2) {
-    last;		# exit the while loop
+    last;		# exit the foreach loop
   }
   else {
     if($line[1] eq "W") {
